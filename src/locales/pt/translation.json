@@ -1,0 +1,91 @@
+{
+    "navbar": {
+        "features": "Funcionalidades",
+        "platform": "Plataforma",
+        "community": "Comunidade",
+        "pricing": "Preços",
+        "login": "Entrar",
+        "getStarted": "Começar"
+    },
+    "hero": {
+        "newSeason": "Nova Temporada Começando em Breve",
+        "titleHighlight": "Programação Competitiva",
+        "subtitle": "Junte-se à plataforma de programação competitiva mais avançada do mundo. Treine com um vasto repositório, compita em tempo real e suba nos rankings globais.",
+        "startCoding": "Comece a Codar Agora",
+        "watchDemo": "Ver Demo",
+        "multiLanguage": "IDE Multi-linguagem",
+        "globalRankings": "Rankings Globais",
+        "activeCommunity": "Comunidade Ativa",
+        "currentStreak": "Sequência Atual",
+        "days": "Dias",
+        "online": "Online",
+        "rank": "Rank",
+        "solved": "Resolvidos"
+    },
+    "features": {
+        "title": "Tudo o que você precisa para <1>se destacar</1>",
+        "subtitle": "Nossa plataforma fornece as ferramentas e o ambiente que você precisa para levar suas habilidades de codificação ao limite.",
+        "cards": {
+            "ide": {
+                "title": "IDE Avançada",
+                "description": "IDE online completa com IntelliSense, ferramentas de depuração e suporte a múltiplas linguagens."
+            },
+            "judge": {
+                "title": "Juiz em Tempo Real",
+                "description": "Feedback instantâneo em suas submissões com métricas detalhadas de execução e análise de casos de teste."
+            },
+            "battles": {
+                "title": "Batalhas de Código",
+                "description": "Desafie amigos ou oponentes aleatórios em duelos de codificação 1v1 ou modos battle royale."
+            },
+            "leaderboards": {
+                "title": "Rankings Globais",
+                "description": "Suba nos rankings regionais e globais. Ganhe insígnias e reconhecimento."
+            },
+            "repository": {
+                "title": "Vasto Repositório",
+                "description": "Acesse milhares de problemas de competições passadas (ICPC, IOI, Codeforces, etc.)."
+            },
+            "analytics": {
+                "title": "Análise de Desempenho",
+                "description": "Insights profundos sobre seus padrões de codificação, pontos fortes e áreas para melhoria."
+            }
+        }
+    },
+    "showcase": {
+        "title": "Code na velocidade do pensamento",
+        "subtitle": "Experimente um ambiente de desenvolvimento projetado para velocidade, precisão e conforto.",
+        "features": [
+            "Experiência de digitação com latência zero",
+            "Atalhos personalizáveis (Vim/Emacs)",
+            "Preenchimento de código inteligente",
+            "Depurador e visualizador integrados"
+        ],
+        "testCases": "Casos de Teste Passados",
+        "executionTime": "Tempo de Execução"
+    },
+    "leaderboard": {
+        "title": "Ranking Global",
+        "subtitle": "Compita com os melhores desenvolvedores de todo o mundo e conquiste seu lugar no topo.",
+        "rank": "Posição",
+        "user": "Usuário",
+        "score": "Pontuação",
+        "viewFull": "Ver Ranking Completo"
+    },
+    "footer": {
+        "description": "A plataforma definitiva para programação competitiva. Treine, compita e conquiste o mundo da codificação.",
+        "platform": "Plataforma",
+        "resources": "Recursos",
+        "links": {
+            "features": "Funcionalidades",
+            "pricing": "Preços",
+            "download": "Download",
+            "integrations": "Integrações",
+            "documentation": "Documentação",
+            "apiReference": "Referência da API",
+            "community": "Comunidade",
+            "blog": "Blog"
+        },
+        "copyright": "© 2024 CODEX Platform. Todos os direitos reservados."
+    }
+}

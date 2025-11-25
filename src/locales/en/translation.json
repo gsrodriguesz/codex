@@ -1,0 +1,91 @@
+{
+    "navbar": {
+        "features": "Features",
+        "platform": "Platform",
+        "community": "Community",
+        "pricing": "Pricing",
+        "login": "Log In",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "newSeason": "New Season Starting Soon",
+        "titleHighlight": "Competitive Coding",
+        "subtitle": "Join the world's most advanced competitive programming platform. Train with a vast repository, compete in real-time, and climb the global leaderboards.",
+        "startCoding": "Start Coding Now",
+        "watchDemo": "Watch Demo",
+        "multiLanguage": "Multi-language IDE",
+        "globalRankings": "Global Rankings",
+        "activeCommunity": "Active Community",
+        "currentStreak": "Current Streak",
+        "days": "Days",
+        "online": "Online",
+        "rank": "Rank",
+        "solved": "Solved"
+    },
+    "features": {
+        "title": "Everything you need to <1>excel</1>",
+        "subtitle": "Our platform provides the tools and environment you need to push your coding skills to the limit.",
+        "cards": {
+            "ide": {
+                "title": "Advanced IDE",
+                "description": "Full-featured online IDE with IntelliSense, debugging tools, and multi-language support."
+            },
+            "judge": {
+                "title": "Real-time Judge",
+                "description": "Instant feedback on your submissions with detailed execution metrics and test case analysis."
+            },
+            "battles": {
+                "title": "Code Battles",
+                "description": "Challenge friends or random opponents in 1v1 coding duels or battle royale modes."
+            },
+            "leaderboards": {
+                "title": "Global Leaderboards",
+                "description": "Climb the ranks in regional and global leaderboards. Earn badges and recognition."
+            },
+            "repository": {
+                "title": "Vast Repository",
+                "description": "Access thousands of problems from past competitions (ICPC, IOI, Codeforces, etc.)."
+            },
+            "analytics": {
+                "title": "Performance Analytics",
+                "description": "Deep insights into your coding patterns, strengths, and areas for improvement."
+            }
+        }
+    },
+    "showcase": {
+        "title": "Code at the speed of thought",
+        "subtitle": "Experience a development environment designed for speed, accuracy, and comfort.",
+        "features": [
+            "Zero-latency typing experience",
+            "Customizable keybindings (Vim/Emacs)",
+            "Smart code completion",
+            "Integrated debugger and visualizer"
+        ],
+        "testCases": "Test Cases Passed",
+        "executionTime": "Execution Time"
+    },
+    "leaderboard": {
+        "title": "Global Leaderboard",
+        "subtitle": "Compete with the best developers from around the world and earn your place at the top.",
+        "rank": "Rank",
+        "user": "User",
+        "score": "Score",
+        "viewFull": "View Full Leaderboard"
+    },
+    "footer": {
+        "description": "The ultimate platform for competitive programming. Train, compete, and conquer the coding world.",
+        "platform": "Platform",
+        "resources": "Resources",
+        "links": {
+            "features": "Features",
+            "pricing": "Pricing",
+            "download": "Download",
+            "integrations": "Integrations",
+            "documentation": "Documentation",
+            "apiReference": "API Reference",
+            "community": "Community",
+            "blog": "Blog"
+        },
+        "copyright": "© 2024 CODEX Platform. All rights reserved."
+    }
+}
