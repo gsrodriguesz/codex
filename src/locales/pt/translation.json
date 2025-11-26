@@ -9,6 +9,7 @@
     },
     "hero": {
         "newSeason": "Nova Temporada Começando em Breve",
+        "title": "Domine a Arte da",
         "titleHighlight": "Programação Competitiva",
         "subtitle": "Junte-se à plataforma de programação competitiva mais avançada do mundo. Treine com um vasto repositório, compita em tempo real e suba nos rankings globais.",
         "startCoding": "Comece a Codar Agora",
@@ -86,6 +87,6 @@
             "community": "Comunidade",
             "blog": "Blog"
         },
-        "copyright": "© 2024 CODEX Platform. Todos os direitos reservados."
+        "copyright": "© 2025 CODEX Platform. Todos os direitos reservados."
     }
 }

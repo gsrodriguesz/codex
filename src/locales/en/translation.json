@@ -9,6 +9,7 @@
     },
     "hero": {
         "newSeason": "New Season Starting Soon",
+        "title": "Master the Art of",
         "titleHighlight": "Competitive Coding",
         "subtitle": "Join the world's most advanced competitive programming platform. Train with a vast repository, compete in real-time, and climb the global leaderboards.",
         "startCoding": "Start Coding Now",
@@ -86,6 +87,6 @@
             "community": "Community",
             "blog": "Blog"
         },
-        "copyright": "© 2024 CODEX Platform. All rights reserved."
+        "copyright": "© 2025 CODEX Platform. All rights reserved."
     }
 }

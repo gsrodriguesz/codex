@@ -29,8 +29,8 @@ const Hero = () => {
                         {t('hero.newSeason')}
                     </div>
 
-                    <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                        Master the Art of <br />
+                    <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                        {t('hero.title')} <br />
                         <span className="text-gradient">{t('hero.titleHighlight')}</span>
                     </h1>
 
@@ -82,7 +82,7 @@ const Hero = () => {
                                 <div className="w-3 h-3 rounded-full bg-green-500/50" />
                             </div>
                             <div className="ml-4 px-3 py-1 rounded-md bg-black/20 text-xs text-gray-500 font-mono flex-1 text-center">
-                                codex.platform/arena/battle-royale
+                                codex.edu.br/arena/battle-royale
                             </div>
                         </div>
 
