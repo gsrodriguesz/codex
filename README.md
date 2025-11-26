@@ -1,5 +1,3 @@
-# CODEX Platform
-
 ![CODEX Logo](src/assets/codex_logo.svg)
 
 **CODEX** é uma plataforma de aprendizado de programação voltada ao ensino de programação competitiva e desenvolvimento de competências tecnológicas. A plataforma oferece um ambiente completo para treinar, competir e evoluir suas habilidades de codificação.
