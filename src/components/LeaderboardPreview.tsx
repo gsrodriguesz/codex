@@ -1,9 +1,15 @@
-import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { Medal, Crown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const LeaderboardPreview = () => {
     const { t } = useTranslation();
+    const sectionRef = useRef<HTMLElement>(null);
+    const rowsRef = useRef<HTMLDivElement>(null);
 
     const topUsers = [
         { rank: 1, name: "AlgorithmKing", score: 3250, country: "US", avatar: "bg-yellow-500" },
@@ -13,8 +19,51 @@ const LeaderboardPreview = () => {
         { rank: 5, name: "GraphGuru", score: 2950, country: "IN", avatar: "bg-purple-500" },
     ];
 
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            // Rows Animation
+            gsap.fromTo(rowsRef.current?.children || [],
+                { x: -50, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 0.5,
+                    stagger: 0.1,
+                    scrollTrigger: {
+                        trigger: rowsRef.current,
+                        start: "top 80%",
+                    }
+                }
+            );
+
+            // Counter Up Animation
+            const scoreElements = document.querySelectorAll('.score-value');
+            scoreElements.forEach((el) => {
+                const target = parseInt(el.textContent || "0", 10);
+                gsap.fromTo(el,
+                    { innerText: 0 },
+                    {
+                        innerText: target,
+                        duration: 2,
+                        ease: "power2.out",
+                        snap: { innerText: 1 },
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 90%",
+                        },
+                        onUpdate: function () {
+                            el.textContent = Math.ceil(this.targets()[0].innerText).toString();
+                        }
+                    }
+                );
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section id="community" className="py-24 relative bg-gradient-to-b from-[#030712] to-[#0f172a]">
+        <section id="community" ref={sectionRef} className="py-24 relative bg-gradient-to-b from-[#030712] to-[#0f172a]">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -32,14 +81,10 @@ const LeaderboardPreview = () => {
                         <div className="col-span-4 text-right">{t('leaderboard.score')}</div>
                     </div>
 
-                    <div className="divide-y divide-white/5">
-                        {topUsers.map((user, index) => (
-                            <motion.div
+                    <div ref={rowsRef} className="divide-y divide-white/5">
+                        {topUsers.map((user) => (
+                            <div
                                 key={user.name}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.3, delay: index * 0.1 }}
-                                viewport={{ once: true }}
                                 className="grid grid-cols-12 gap-4 p-4 items-center hover:bg-white/5 transition-colors"
                             >
                                 <div className="col-span-2 flex justify-center">
@@ -55,15 +100,15 @@ const LeaderboardPreview = () => {
                                     <span className="font-medium text-white">{user.name}</span>
                                     <span className="text-xs text-gray-500 bg-white/5 px-1.5 py-0.5 rounded">{user.country}</span>
                                 </div>
-                                <div className="col-span-4 text-right font-mono text-orange-300">
-                                    {user.score}
+                                <div className="col-span-4 text-right font-mono text-primary">
+                                    <span className="score-value">{user.score}</span>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
 
                     <div className="p-4 text-center border-t border-white/10">
-                        <button className="text-sm text-orange-400 hover:text-orange-300 transition-colors">
+                        <button className="text-sm text-primary hover:text-primary-glow transition-colors">
                             {t('leaderboard.viewFull')}
                         </button>
                     </div>

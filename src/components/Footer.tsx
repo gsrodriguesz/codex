@@ -20,20 +20,20 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold text-white mb-4">{t('footer.platform')}</h4>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.features')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.pricing')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.download')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.integrations')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.features')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.pricing')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.download')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.integrations')}</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-bold text-white mb-4">{t('footer.resources')}</h4>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.documentation')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.apiReference')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.community')}</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">{t('footer.links.blog')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.documentation')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.apiReference')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.community')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('footer.links.blog')}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,9 +43,9 @@ const Footer = () => {
                         {t('footer.copyright')}
                     </div>
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
+                        <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Github size={20} /></a>
+                        <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Twitter size={20} /></a>
+                        <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Linkedin size={20} /></a>
                     </div>
                 </div>
             </div>
