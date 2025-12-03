@@ -85,8 +85,7 @@ O CODEX oferecerá diversos modos de jogo para tornar o aprendizado mais dinâmi
 ## 📦 Instalação e Execução
 
 ### Pré-requisitos
-- Node.js (versão 18 ou superior)
-- npm ou yarn
+- [Bun](https://bun.sh/) (versão 1.0 ou superior)
 
 ### Passos para execução
 
@@ -98,12 +97,12 @@ cd codex
 
 2. Instale as dependências:
 ```bash
-npm install
+bun install
 ```
 
 3. Execute em modo de desenvolvimento:
 ```bash
-npm run dev
+bun run dev
 ```
 
 4. Acesse a aplicação:
@@ -113,10 +112,10 @@ http://localhost:5173
 
 ### Scripts Disponíveis
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera build de produção
-- `npm run preview` - Visualiza o build de produção localmente
-- `npm run lint` - Executa o linter
+- `bun run dev` - Inicia o servidor de desenvolvimento
+- `bun run build` - Gera build de produção
+- `bun run preview` - Visualiza o build de produção localmente
+- `bun run lint` - Executa o linter
 
 ## 📁 Estrutura do Projeto
 
