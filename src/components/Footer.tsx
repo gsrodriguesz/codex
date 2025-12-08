@@ -1,5 +1,6 @@
 import { Github, Twitter, Linkedin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 import logo from '../assets/codex_logo.svg';
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-2 font-bold text-2xl tracking-tighter mb-4">
-                            <img src={logo} alt="CODEX Logo" className="w-40 object-cover" />
+                            <Image src={logo} alt="CODEX Logo" className="w-40 object-cover" />
                         </div>
                         <p className="text-gray-400 max-w-sm">
                             {t('footer.description')}

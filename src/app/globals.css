@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
-
 @theme {
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 
   --color-bg: #030712;
   --color-surface: #0f172a;
